@@ -1,16 +1,16 @@
 [
   {
-    "id": "beehive_frame",
-    "looks_like": "beehive_empty",
-    "type": "GENERIC",
-    "name": "beehive frame",
-    "description": "A large traditional beehive frame, the frame comes apart into layers for easier access to the honey inside, now you just need some bees to move in.",
-    "weight": "50000 g",
-    "volume": "50 L",
-    "price": 5200,
-    "material": [ "wood" ],
-    "symbol": "-",
-    "color": "brown"
+"id": "beehive_frame",
+"looks_like": "beehive_empty",
+"type": "GENERIC",
+"name": "beehive frame",
+"description": "A large traditional beehive frame, the frame comes apart into layers for easier access to the honey inside, now you just need some bees to move in.",
+"weight": "50000 g",
+"volume": "50 L",
+"price": 5200,
+"material": [ "wood" ],
+"symbol": "-",
+"color": "brown"
   },
   {
     "type": "recipe",
