@@ -16,6 +16,8 @@ jobs:
       with:
         fetch-depth: 1
     - name: Make formatter executable
+      run: echo hello there.
+    - name: Make formatter executable
       run: chmod +x ./tools/json_formatter.exe
     - name: JSON style check
       run: find WildLiving -name "*.json" -print | xargs -L 1
