@@ -1,0 +1,24 @@
+name: JSON Validation
+
+on:
+  pull_request:
+    paths:
+    - '**.json'
+
+jobs:
+  style-json:
+    name: JSON style check
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    - name: JSON style check
+      run: find WildLiving -name "*.json" -print | xargs -L 1 ./tools/json_formatter.exe
+    - name: List files
+      run: find WildLiving -name "*.json" -print
+    - name: Display Corrections
+      if: failure()
+      run: git diff
