@@ -15,8 +15,11 @@ jobs:
     - uses: actions/checkout@v1
       with:
         fetch-depth: 1
+    - name: Make formatter executable
+        run: chmod +x ./tools/json_formatter.exe
     - name: JSON style check
-      run: find WildLiving -name "*.json" -print | xargs -L 1 ./tools/json_formatter.cgi
+      run: find WildLiving -name "*.json" -print | xargs -L 1
+      ./tools/json_formatter.exe
     - name: List files
       if: failure()
       run: git diff
